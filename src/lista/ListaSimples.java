@@ -47,6 +47,18 @@ public class ListaSimples {
 		this.quantNo++;
 	}
 	
+	public void inserirUltimo(Pessoa p){
+		No novoNo = new No(p);
+		if(this.verificaVazia()){
+			this.primeiro = novoNo;
+			
+		} else{
+			this.ultimo.setProx(novoNo);
+		}
+		this.ultimo = novoNo;
+		this.quantNo++;
+	}
+	
 	public boolean verificaVazia(){
 		return (this.primeiro == null);
 	}
