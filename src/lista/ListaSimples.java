@@ -97,10 +97,10 @@ public class ListaSimples {
 			atual = atual.getProx();
 		}
 		return msg = "Nome: "+atual.getP().getNome()+"\n"+
-					 "Sexo: "+atual.getP().getSexo()+"\n"+
-					 "Idade:"+atual.getP().getIdade();
+				"Sexo: "+atual.getP().getSexo()+"\n"+
+				"Idade:"+atual.getP().getIdade();
 	}
-	
+
 	public String imprimirLista(){
 		String msg = "";
 		if (verificaVazia()){

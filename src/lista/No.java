@@ -1,10 +1,10 @@
 package lista;
 
 public class No {
-	
+
 	private Pessoa p;
 	private No prox;
-	
+
 	public No(Pessoa pe){
 		this.p = pe;
 		this.prox = null;
