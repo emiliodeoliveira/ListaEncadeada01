@@ -36,14 +36,41 @@ public class Main {
 				lista.inserirUltimo(p);
 				break;
 			case '3': 
+				if (lista.verificaVazia()){
+					System.out.println("A lista está vazia!");
+				}else{
+					System.out.print("Localizando pessoa:\nDigite o nome:");
+					String nome = ler.next();
+					if (lista.pesquisarNo(nome) == null){
+						System.out.println("Não foram encontrados registros!");
+					} else{
+						System.out.println("Resultados --------------------");
+						System.out.println(lista.pesquisarNo(nome));
+					}
+				}
 				break;
 			case '4': 
+				if (lista.verificaVazia()){
+					System.out.println("A lista está vazia!");
+				} else{
+					System.out.print("Excluir uma pessoa --------------------\n Digite o nome:");
+					String nome = ler.next();
+					if (lista.removerNo(nome)){
+						System.out.println(nome+" foi removido com sucesso!");
+					} else {
+						System.out.println("Não foi possível remover "+nome);
+					}
+				}
 				break;
 			case '5': 
+				System.out.println("---------------------------------\n Lista:");
+				System.out.println(lista.imprimirLista());
 				break;
 			case '6': 
+				System.out.println("A lista contem "+lista.getQuantNo());
 				break;
 			case '7': 
+				System.exit(0);
 				break;
 			}
 		}while(opcao != '7');

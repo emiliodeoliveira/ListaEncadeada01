@@ -1,9 +1,10 @@
 package lista;
 
 public class Pessoa {
+
 	
 	private String nome;
-	private String Sexo;
+	private String sexo;
 	private int idade;
 	
 	public String getNome() {
@@ -12,11 +13,12 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public String getSexo() {
-		return Sexo;
+		return sexo;
 	}
 	public void setSexo(String sexo) {
-		Sexo = sexo;
+		this.sexo = sexo;
 	}
 	public int getIdade() {
 		return idade;
