@@ -1,7 +1,6 @@
 package lista;
 
 public class Pessoa {
-
 	
 	private String nome;
 	private String sexo;
@@ -25,8 +24,5 @@ public class Pessoa {
 	}
 	public void setIdade(int idade) {
 		this.idade = idade;
-	}
-	
-	
-	
+	}	
 }
